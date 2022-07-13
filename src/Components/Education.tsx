@@ -31,6 +31,7 @@ class EducationCard extends Component {
 
                 {/* <Link to={'/portfolio/' + item.id}> */}
                 <Card
+                  hoverable
                   style={{
                     width: 'auto',
                     height: 'auto',

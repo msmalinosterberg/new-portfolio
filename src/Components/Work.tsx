@@ -1,14 +1,14 @@
-import  { Component, CSSProperties } from 'react';
-import { Card, Col, List, Row,  } from 'antd';
+import { Component, CSSProperties } from 'react';
+import { Card, Col, List, Row } from 'antd';
 import { Link, withRouter } from 'react-router-dom';
 import { workList } from './SchoolWork';
 
 const { Meta } = Card;
 class WorkCard extends Component {
-  
-        
+
+
     render() {
-        return(    
+        return (
             <Row style={cardContainer}>
                 <Col span={24} style={columnStyle}>
                     <List
@@ -24,16 +24,19 @@ class WorkCard extends Component {
                         dataSource={workList}
                         renderItem={item => (
                             <List.Item>
-                                <Link to={'/portfolio/'+ item.id}>
+                                <Link to={'/portfolio/' + item.id}>
                                     <Card
-                                        style={{ width: 450}}
+                                        hoverable
+                                        style={{ width: 'auto', height: 400 }}
                                         cover={<img alt="" src={item.imageUrl} />}
                                     >
                                         <Meta title={item.title} description={item.tags} />
+
                                     </Card>
+
                                 </Link>
                             </List.Item>
-                        )}    
+                        )}
                     />
                 </Col>
             </Row>
@@ -41,21 +44,15 @@ class WorkCard extends Component {
     }
 }
 
-export default  withRouter(WorkCard as any);
+export default withRouter(WorkCard as any);
 
 const cardContainer: CSSProperties = {
     display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'space-around',
-    width: '80%',
-    margin: 'auto',
-
+    justifyContent: 'center',
+    alignItems: 'center',
 }
 
 const columnStyle: CSSProperties = {
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: '3rem',
-    marginBottom: '3rem',
+    width: '80%',
 }
