@@ -1,0 +1,30 @@
+import { Route, Switch } from "react-router-dom";
+
+import Education from "./Education";
+import Home from "./Home";
+import Navbar from "./Navbar";
+import PageAnimation from "./PageAnimation";
+import SchoolWorkDetails from "./SchoolWorkDetails";
+import WorkCard from "./Work";
+
+export default function MasterView() {
+
+    return (
+        <>
+            <Navbar />
+            <Switch> 
+                    <Route path='/portfolio/:id' component={SchoolWorkDetails}> 
+                    </Route>
+                    <Route path='/education' component={Education} />
+
+                    <Route path='/portfolio'>
+                    <PageAnimation>
+                        <WorkCard /> 
+                        </PageAnimation>
+                    </Route> 
+                    <Route exact path='/' component={Home}/>
+            </Switch>
+        </> 
+
+    ); 
+}

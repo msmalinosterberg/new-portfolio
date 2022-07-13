@@ -1,0 +1,39 @@
+@import '~antd/dist/antd.css';
+@import "typeface-roboto";
+
+.App {
+  text-align: center;
+
+}
+
+
+.ant-menu-horizontal {
+  border-bottom: none;
+  box-shadow: none;
+  border: none;
+  font-family: 'roboto'
+
+}
+
+.ant-menu-horizontal > .ant-menu-item {
+  border-bottom: white !important;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ 
+}
+.slidingText{
+  color: #FFC300; 
+}
+
+.ant-divider-horizontal.ant-divider-with-text-center::before,
+.ant-divider-horizontal.ant-divider-with-text-center::after
+{
+   border-top: 1px solid #FFC300;
+   width: 40%;
+}
