@@ -21,8 +21,8 @@ function Home() {
 
                         <div className="home">
                             <SlidingFromLeftAnimation>
-                                <h1 className="slidingText" style={{ fontSize: '3.5rem' }}>
-                                    Hej, Malin här.
+                                <h1 className="slidingText" style={{ fontSize: '3.5rem', marginRight: '3rem' }}>
+                                    Hello there, I'm Malin
                                 </h1>
                             </SlidingFromLeftAnimation>
                             {/* <SlidingFromRightAnimation>
@@ -34,13 +34,16 @@ function Home() {
 
                         </div>
 
-                        <p style={{ fontSize: '2rem' }}>
-                            Webbkommunikatör &amp; front end utvecklare.
-                        </p>
+                        {/* <p style={{ fontSize: '2rem' }}>
+                            Front end developer &amp; web communicator
+                        </p> */}
                         <p style={{ fontSize: '1rem' }}>
-                            Kolla gärna min portfolio och hör av er om ni behöver en front end utvecklare!
+
+                            I'm a happy front end  developer with roots in marketing and communication. I love solving problems, coming up with creative solutions and make them come to life.
+                            Code is a new friend of mine but I feel like this is just the beginning of something big...
+
                         </p>
-                        <Divider plain>Vi hörs! </Divider>
+                        <Divider plain> Let's keep in touch</Divider>
                         <div style={{ fontSize: '2.3rem', display: 'flex', justifyContent: 'space-around', marginTop: '1rem', marginRight: '5rem' }}>
                             <a href="https://github.com/msmalinosterberg/" style={{ color: 'black' }}>
                                 <GithubOutlined />
