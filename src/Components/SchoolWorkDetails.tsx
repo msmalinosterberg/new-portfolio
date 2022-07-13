@@ -35,7 +35,7 @@ class SchoolWorkDetails extends Component<Props, State> {
             <Row style={detailContainer}>
 
                 <Col lg={{ span: 10 }} style={columnStyle}>
-                    <h1 style={{ color: 'black', fontFamily: 'roboto' }}>Skolprojekt </h1>
+                    <h1 style={{ color: 'black', fontFamily: 'roboto' }}> Featured Projects  </h1>
                     <Image
                         width={450}
                         src={this.state.work.imageUrl}
@@ -47,12 +47,12 @@ class SchoolWorkDetails extends Component<Props, State> {
                     <h3 style={titleStyle}>{this.state.work.title}</h3>
                     <h5 style={secondStyle}>{this.state.work.description} </h5>
                     <a href={this.state.work.link}>
-                        <h5 style={secondStyle}>Länk till projektet</h5> </a>
+                        <h5 style={secondStyle}>Check out the project</h5> </a>
                     <a href={this.state.work.githubRepo}>
-                        <h5 style={secondStyle}> Github repo</h5> </a>
-                    <h5 style={thirdStyle}> Arbetade med: <Tag color="blue">{this.state.work.tags}</Tag></h5>
+                        <h5 style={secondStyle}> Github</h5> </a>
+                    <h5 style={thirdStyle}>  <Tag color="blue">{this.state.work.tags}</Tag></h5>
 
-                    <button style={buttonStyle} onClick={this.navigateBack}>Tillbaka</button>
+                    <button style={buttonStyle} onClick={this.navigateBack}>Back</button>
 
                 </Col>
             </Row>
