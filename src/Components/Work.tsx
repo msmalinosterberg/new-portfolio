@@ -1,5 +1,5 @@
 import { Component, CSSProperties } from 'react';
-import { Card, Col, List, Row } from 'antd';
+import { Card, Col, Divider, List, Row } from 'antd';
 import { Link, withRouter } from 'react-router-dom';
 import { workList } from './SchoolWork';
 
@@ -10,6 +10,8 @@ class WorkCard extends Component {
     render() {
         return (
             <Row style={cardContainer}>
+                <Divider className="dividerStyle"> Featured Projects </Divider>
+
                 <Col span={24} style={columnStyle}>
                     <List
                         grid={{
@@ -50,6 +52,7 @@ const cardContainer: CSSProperties = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+
 }
 
 const columnStyle: CSSProperties = {

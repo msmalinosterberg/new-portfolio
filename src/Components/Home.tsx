@@ -39,7 +39,7 @@ function Home() {
                         </p> */}
                         <p style={{ fontSize: '1rem' }}>
 
-                            I'm a happy front end  developer with roots in marketing and communication. I love solving problems, coming up with creative solutions and make them come to life.
+                            I'm a happy front end  developer with a background in marketing and communication. I love solving problems, coming up with creative solutions and make them come to life.
                             Code is a new friend of mine but I feel like this is just the beginning of something big...
 
                         </p>
