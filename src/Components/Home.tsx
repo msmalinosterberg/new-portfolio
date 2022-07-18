@@ -25,10 +25,15 @@ function Home() {
                                 </h1>
                             </SlidingFromLeftAnimation>
                         </div>
-                        <p style={{ fontSize: '1rem' }}>
-                            I'm a happy front end  developer with a background in marketing and communication. I love solving problems, coming up with creative solutions and make them come to life.
-                            Code is a new friend of mine but I feel like this is just the beginning of something big...
-                        </p>
+                        <p style={pStyle}>
+                            I'm a front end developer with a background in marketing and communication. I love solving problems, coming up with creative solutions and make them come to life.
+
+                            <br />
+                            <br />
+
+                            <b> I'm currently looking for a job in the area of Gothenburg or Stockholm.
+                                <br />
+                                I'm open for working remote as well.</b>  </p>
                         <Divider plain> Let's keep in touch</Divider>
                         <div style={{ fontSize: '2.3rem', display: 'flex', justifyContent: 'space-around', marginTop: '1rem', marginRight: '5rem' }}>
                             <a href="https://github.com/msmalinosterberg/" style={{ color: 'black' }}>
@@ -91,6 +96,12 @@ const columnStyle: CSSProperties = {
     fontFamily: 'roboto',
     marginTop: '7rem',
     marginBottom: '6rem',
+}
+
+const pStyle: CSSProperties = {
+    fontSize: '16px',
+    justifyContent: 'center',
+    alignContent: 'center'
 }
 
 export default Home; 
