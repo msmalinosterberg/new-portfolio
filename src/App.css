@@ -53,10 +53,10 @@ overflow-y: auto;
 /* navbar */
 .navbar {
   padding-bottom: 1px;
-  border-bottom: solid 1px #e8e8e8;
+  /* border-bottom: solid 1px #e8e8e8; */
   background-color: white;
-  box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.12),
-    0 6px 16px -11px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.12),
+    0 6px 16px -11px rgba(0, 0, 0, 0.08); */
   position: sticky;
   top: 0;
   margin-bottom: 20px;
@@ -71,7 +71,7 @@ overflow-y: auto;
 }
 
 .logo {
-  width: 200px;
+  width: 100px;
   float: left;
 }
 
@@ -83,7 +83,7 @@ overflow-y: auto;
 }
 
 .navbar-menu {
-  width: calc(100% - 200px);
+  width: calc(100% - 100px);
   float: left;
 
 }
@@ -154,7 +154,7 @@ overflow-y: auto;
   }
 
   .logo a {
-    margin-left: -10px;
+    margin-left: 0px;
   }
 
   .ant-drawer-title > .brand-font {
