@@ -6,6 +6,7 @@ import { Image } from 'antd';
 import { GithubOutlined, LinkedinOutlined, MailOutlined } from "@ant-design/icons";
 import { Divider } from 'antd';
 import { SlidingFromLeftAnimation } from "./PageAnimation";
+import DownloadPdf from "./DownloadPdf";
 
 
 
@@ -57,6 +58,9 @@ function Home() {
 
 
                     </Col>
+                    <Col lg={{ span: 24 }} style={{ marginTop: '-10rem' }} className="downloadblubb">
+                        <DownloadPdf />
+                    </Col>
                 </Row>
             </Content>
         </Layout >
@@ -71,7 +75,7 @@ const layoutContainer: CSSProperties = {
     height: '100vh',
     display: 'flex',
     justifyContent: 'center',
-    fontFamily: 'roboto'
+    fontFamily: 'roboto',
 
 }
 
