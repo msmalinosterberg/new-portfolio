@@ -4,7 +4,7 @@ import { CSSProperties, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import LeftMenu from './LeftMenu';
 import RightMenu from './RightMenu';
-
+import logo from '../Assets/yellow.png'
 
 
 const Navbar = () => {
@@ -23,9 +23,10 @@ const Navbar = () => {
     <nav className="navbar">
       <Layout>
         <Layout.Header className="nav-header">
-          <div className="logo">
+          <div className="">
             <h3 className="brand-font">
-              MÖ
+              <img src={logo} alt="logo" className='logo' />
+
             </h3>
           </div>
           <div className="navbar-menu">
@@ -56,4 +57,5 @@ export default Navbar;
 
 const hamburgerMenuStyle: CSSProperties = {
   zIndex: 99999,
+
 }

@@ -18,30 +18,16 @@ function Home() {
                 <Row style={detailContainer}>
 
                     <Col lg={{ span: 12 }} style={columnStyle}>
-
                         <div className="home">
                             <SlidingFromLeftAnimation>
                                 <h1 className="slidingText" style={{ fontSize: '3.5rem', marginRight: '3rem' }}>
                                     Hello there, I'm Malin
                                 </h1>
                             </SlidingFromLeftAnimation>
-                            {/* <SlidingFromRightAnimation>
-                                <h1 className="slidingHeading">Front end utvecklare</h1>
-                            </SlidingFromRightAnimation>
-                            <SlidingFromLeftAnimation2>
-                                <h1 className="slidingHeading">Webbkommunikatör</h1>
-                            </SlidingFromLeftAnimation2> */}
-
                         </div>
-
-                        {/* <p style={{ fontSize: '2rem' }}>
-                            Front end developer &amp; web communicator
-                        </p> */}
                         <p style={{ fontSize: '1rem' }}>
-
                             I'm a happy front end  developer with a background in marketing and communication. I love solving problems, coming up with creative solutions and make them come to life.
                             Code is a new friend of mine but I feel like this is just the beginning of something big...
-
                         </p>
                         <Divider plain> Let's keep in touch</Divider>
                         <div style={{ fontSize: '2.3rem', display: 'flex', justifyContent: 'space-around', marginTop: '1rem', marginRight: '5rem' }}>
@@ -57,7 +43,7 @@ function Home() {
                     </Col>
 
 
-                    <Col lg={{ span: 12 }} style={columnStyle}>
+                    <Col lg={{ span: 12 }}>
                         <Image
                             width={350}
                             style={imageStyle}
@@ -87,28 +73,24 @@ const layoutContainer: CSSProperties = {
 const imageStyle: CSSProperties = {
     borderRadius: '3.8rem',
 
+
 }
 
 const detailContainer: CSSProperties = {
+    justifyContent: 'space-between',
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'row',
     alignItems: 'center',
     width: '80%',
     margin: 'auto',
-    fontFamily: 'roboto'
+    fontFamily: 'roboto',
 
 }
 
 const columnStyle: CSSProperties = {
-    display: 'flex',
-    flexDirection: 'column',
     fontFamily: 'roboto',
     marginTop: '7rem',
     marginBottom: '6rem',
-    justifyContent: 'space-between'
 }
-
-
-
 
 export default Home; 
