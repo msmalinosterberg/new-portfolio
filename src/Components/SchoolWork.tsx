@@ -13,7 +13,7 @@ export const workList: Work[] = [{
 
     id: 1,
     title: 'FashionStore',
-    description: 'Grupparbete i JavaScript fördjupning 45yhp. Mars 2021. Uppgiften gick ut på att skapa en e-handel som hämtar data från ett mockup api. VG kravet var att skapa en admin sida där det gick att redigera och addera produkter. Vi valde att skapa en sida som säljer kläder.',
+    description: 'Group assignment in Advanced JavaScript 45yhp. March 2021. The task was to create an e-commerce that retrieves data from a mockup api. To get a higher credit you were to create an admin page where it was possible to edit and add products. We created a site that sells clothes.',
     imageUrl: 'https://user-images.githubusercontent.com/73331860/113003168-c0178c00-9172-11eb-9146-c271148872b4.png?raw=true',
     link: 'https://fashionstore-webshop.netlify.app/',
     tags: ' [react][TypeScript][Ant Design][HTML] [CSS] [OOP] [git & GitHub] [VS code] ',
@@ -22,7 +22,7 @@ export const workList: Work[] = [{
 {
     id: 2,
     title: 'MovieApp',
-    description: 'Grupparbete i JavaScript fördjupning 45yhp. Mars 2021. Uppgiften gick ut på att skapa en valfri webb-app och hämta data från ett webb-API. Vi valde att skapa en film app som hämtar data från Imdb',
+    description: 'Group assignment in Advanced JavaScript 45yhp. March 2021. The task was to create an optional web app and retrieve data from a web API. We created a movie app that retrieves data from Imdb.',
     imageUrl: 'https://user-images.githubusercontent.com/73331860/112618713-b9adab00-8e26-11eb-8a83-f35f513f643b.png?raw=true',
     link: 'https://search-for-movies.netlify.app/',
     tags: ' [react][TypeScript][Ant Design][HTML] [CSS] [OOP] [git & GitHub] [VS code] ',
@@ -31,7 +31,7 @@ export const workList: Work[] = [{
 {
     id: 3,
     title: 'NumberQuiz',
-    description: 'Grupparbete i kursen Agila metoder 15yhp. Februari 2021. Uppgiften gick ut på att skapa ett Gissa numret -spel mot olika botar. Vi arbetade agilt enligt scrum-metoden.',
+    description: 'Group assignment in Project management with agile methods 15yhp. February 2021. The task was to create a guess the number game. You play against bots and the winner takes it all. We worked agile and according to the scrum method.',
     imageUrl: 'https://user-images.githubusercontent.com/73331860/112620652-1c07ab00-8e29-11eb-9099-2e11353369c9.png?raw=true',
     link: 'https://crackthenumber.netlify.app/',
     tags: ' [HTML] [CSS] [TypeScript] [OOP] [Scrum] [Agila metoder] [git & GitHub][VS code]',
@@ -40,7 +40,7 @@ export const workList: Work[] = [{
 {
     id: 4,
     title: 'FallingStars',
-    description: 'Grupparbete i JavaScript grundkurs 60yhp. Januari 2021. Uppgiften gick ut på att skapa ett spel. Spelbeskrivning finns på gitHub repot.',
+    description: 'Group assignment in basci JavaScript 60yhp. January 2021. The task was to created a game with p5.js. You can find the game description on gitHub.',
     imageUrl: 'https://user-images.githubusercontent.com/73331860/112620873-5a04cf00-8e29-11eb-85d4-7a66af6ed71d.png?raw=true',
     link: 'https://fallingstars.netlify.app/',
     tags: '[HTML] [CSS] [TypeScript] [OOP] [p5.js][git & Github] [VS code] [pseudokod] [flowchart]',
@@ -49,7 +49,7 @@ export const workList: Work[] = [{
 {
     id: 5,
     title: 'Spotify',
-    description: 'Inlämningsuppgift i HTML & CSS 20yhp. Oktober 2020. Av: Malin Österberg & Felicia Segerholm. Uppgiften gick ut på att återskapa en hemsidas struktur, design och responsivitet. Vi valde Spotify och skapade deras förstasida.',
+    description: 'Assignment in HTML & CSS 20yhp. October 2020. The first task in school was to recreate a optional websites design and use HTML and CSS to style it.',
     imageUrl: 'https://user-images.githubusercontent.com/73331860/112619850-1493d200-8e28-11eb-852f-87cdcfa0b325.png?raw=true',
     link: 'https://msmalinosterberg.github.io/responsive-website/',
     tags: '[HTML] [CSS][VS code]',
