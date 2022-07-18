@@ -12,7 +12,7 @@ export default function DownloadPdf() {
     };
     return (
         <div style={divStyle}>
-            <img src={download} alt="download cv" style={downloadStyle} onClick={saveFile} />
+            <img src={download} alt="download cv" style={downloadStyle} onClick={saveFile} className="downloadBubble" />
 
         </div>
     );

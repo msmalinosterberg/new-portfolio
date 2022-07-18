@@ -16,11 +16,12 @@ overflow-y: auto;
   box-shadow: none;
   border: none;
   font-family: 'roboto';
-
 }
 
 .ant-menu-horizontal > .ant-menu-item {
   border-bottom: white !important;
+ 
+
 }
 
 .home {
@@ -49,6 +50,7 @@ overflow-y: auto;
   display: flex;
   align-items: center;
 }
+
 
 /* navbar */
 .navbar {
@@ -89,6 +91,7 @@ overflow-y: auto;
 }
 .navbar-menu .ant-layout-header {
   padding: 0 20px;
+
 }
 
 .navbar-menu .ant-menu-horizontal {
@@ -101,6 +104,7 @@ overflow-y: auto;
 
 .navbar-menu .leftMenu {
   float: left;
+ margin-left: 2.7rem;
 }
 
 .navbar-menu .rightMenu {
@@ -137,11 +141,9 @@ overflow-y: auto;
   border-bottom-color: transparent;
 }
 
-.username {
-  display: none;
-  margin-left: 8px;
-}
 
+
+/*Responsive */ 
 @media (max-width: 767px) {
   .menuButton {
     display: block;
@@ -163,5 +165,29 @@ overflow-y: auto;
 
   .username {
     display: inline-block;
+  }
+  .downloadblubb {
+  padding-left: 10rem;
+  opacity: 75%;
+  }
+}
+
+
+/*Animation*/ 
+.downloadBubble {
+  transform: scale(1);
+  animation: pulse-black 2s infinite;
+}
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.95);
+  }
+  
+  70% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(0.95);
   }
 }
