@@ -6,7 +6,7 @@ import download from '../Assets/downloadPdf.png'
 export default function DownloadPdf() {
     const saveFile = () => {
         saveAs(
-            "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "https://github.com/msmalinosterberg/new-portfolio/blob/7ea613ce1089a86ba37ced57bb49192de21e2d3d/CVMalinO%CC%88sterberg.pdf",
             "CVMalinÖsterberg.pdf"
         );
     };
