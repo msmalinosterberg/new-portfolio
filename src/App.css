@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 @import "typeface-roboto";
 
 * {
@@ -10,18 +10,14 @@
   overflow-y: auto;
 }
 
-
 .ant-menu-horizontal {
   border-bottom: none;
   box-shadow: none;
   border: none;
-
 }
 
 .ant-menu-horizontal > .ant-menu-item {
   border-bottom: white !important;
- 
-
 }
 
 .home {
@@ -29,27 +25,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-.slidingText{
-  color: #FFC300;
+.slidingText {
+  color: #ffc300;
 }
 
 .ant-divider-horizontal.ant-divider-with-text-center::before,
-.ant-divider-horizontal.ant-divider-with-text-center::after
-{
-   border-top: 1px solid #FFC300;
- 
- 
+.ant-divider-horizontal.ant-divider-with-text-center::after {
+  border-top: 1px solid #ffc300;
 }
 .dividerStyle {
   justify-content: center;
   display: flex;
   align-items: center;
-
 }
-
-
 
 /* navbar */
 .navbar {
@@ -62,7 +51,6 @@
   top: 0;
   margin-bottom: 20px;
   z-index: 99990;
-
 }
 
 .nav-header {
@@ -80,17 +68,14 @@
   display: inline-block;
   font-size: 20px;
   text-transform: capitalize;
-
 }
 
 .navbar-menu {
   width: calc(100% - 100px);
   float: left;
-
 }
 .navbar-menu .ant-layout-header {
   padding: 0 20px;
-
 }
 
 .navbar-menu .ant-menu-horizontal {
@@ -103,7 +88,7 @@
 
 .navbar-menu .leftMenu {
   float: left;
- margin-left: 2.7rem;
+  margin-left: 2.7rem;
 }
 
 .navbar-menu .rightMenu {
@@ -140,9 +125,12 @@
   border-bottom-color: transparent;
 }
 
+.detailImg {
+  height: 400px;
+  padding: 3.3rem;
+}
 
-
-/*Responsive */ 
+/*Responsive */
 @media (max-width: 767px) {
   .menuButton {
     display: block;
@@ -166,9 +154,8 @@
     display: inline-block;
   }
   .downloadblubb {
-  padding-left: 10rem;
-  opacity: 75%;
-
+    padding-left: 10rem;
+    opacity: 75%;
   }
   .profileImg {
     justify-content: center;
@@ -185,13 +172,24 @@
     align-items: center;
     display: flex;
   }
-  
-} 
+  .tagStyle {
+    display: none;
+  }
+  .colStyle {
+    order: 2;
+  }
+  .detailImg {
+    height: 400px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .colStyle {
+    order: 2;
+  }
+}
 
-
-
-
-/*Animation*/ 
+/*Animation*/
 .downloadBubble {
   transform: scale(1);
   animation: pulse-black 2s infinite;
@@ -200,11 +198,11 @@
   0% {
     transform: scale(0.95);
   }
-  
+
   70% {
     transform: scale(1);
   }
-  
+
   100% {
     transform: scale(0.95);
   }

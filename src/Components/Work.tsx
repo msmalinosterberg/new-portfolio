@@ -12,7 +12,7 @@ class WorkCard extends Component {
             <Row style={cardContainer}>
                 <Divider className="dividerStyle"> Featured Projects </Divider>
 
-                <Col span={24} style={columnStyle}>
+                <Col lg={{ span: 24 }} md={{ span: 24 }} sm={{ span: 24 }} style={columnStyle}>
                     <List
                         grid={{
                             gutter: 25,

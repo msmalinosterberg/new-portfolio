@@ -2,8 +2,9 @@ import { Col, Row } from "antd/lib/grid";
 import { Component, CSSProperties } from "react";
 import { RouteComponentProps, withRouter } from "react-router-dom";
 import { workList } from "./SchoolWork";
-import { Image, Tag } from 'antd';
+import { Image, Layout, Tag } from 'antd';
 import "typeface-roboto";
+import { Content } from "antd/lib/layout/layout";
 
 
 
@@ -31,47 +32,57 @@ class SchoolWorkDetails extends Component<Props, State> {
 
     render() {
         return (
+            <Layout style={layoutContainer} >
+                <Content>
+                    <Row style={detailContainer}>
+                        <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} style={columnStyle} className="colStyle">
+                            <h5 style={titleStyle}>{this.state.work.title}</h5>
+                            <p style={secondStyle}>{this.state.work.description} </p>
+                            <a href={this.state.work.link}>
+                                <p style={secondStyle}>Check out the project</p> </a>
+                            <a href={this.state.work.githubRepo}>
+                                <p style={secondStyle}> Github</p> </a>
+                            <p style={thirdStyle} className='tagStyle'>  <Tag color="blue">{this.state.work.tags}</Tag></p>
+                            <button style={buttonStyle} onClick={this.navigateBack}>Back</button>
+                        </Col>
 
-            <Row style={detailContainer}>
-
-                <Col lg={{ span: 12 }} style={columnStyle}>
-                    {/* <h1 style={{ color: 'black', fontFamily: 'roboto' }}> Featured Projects  </h1> */}
-                    <Image
-                        width={450}
-                        src={this.state.work.imageUrl}
-                    />
-                </Col>
-
-                <Col lg={{ span: 12 }} style={columnStyle}>
-
-                    <h5 style={titleStyle}>{this.state.work.title}</h5>
-                    <p style={secondStyle}>{this.state.work.description} </p>
-                    <a href={this.state.work.link}>
-                        <p style={secondStyle}>Check out the project</p> </a>
-                    <a href={this.state.work.githubRepo}>
-                        <p style={secondStyle}> Github</p> </a>
-                    <p style={thirdStyle}>  <Tag color="blue">{this.state.work.tags}</Tag></p>
-                    <button style={buttonStyle} onClick={this.navigateBack}>Back</button>
-                </Col>
-            </Row>
+                        <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} style={columnStyle}>
+                            <Image
+                                src={this.state.work.imageUrl}
+                                className='detailImg'
+                            />
+                        </Col>
+                    </Row>
+                </Content>
+            </Layout >
         );
     }
 }
 
 export default withRouter(SchoolWorkDetails as any);
 
+const layoutContainer: CSSProperties = {
+    background: 'white',
+    color: 'black',
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    fontFamily: 'roboto',
+
+}
+
+
 const detailContainer: CSSProperties = {
     display: 'flex',
     justifyContent: 'space-around',
     width: '80%',
     margin: 'auto',
-    fontFamily: 'roboto'
 
 }
 
 const columnStyle: CSSProperties = {
-    display: 'flex',
-    flexDirection: 'column',
+    // display: 'flex',
+    // flexDirection: 'column',
     marginTop: '10rem',
     marginBottom: '5rem',
 }
@@ -94,13 +105,11 @@ const buttonStyle: CSSProperties = {
 
 const secondStyle: CSSProperties = {
     fontSize: '1.1rem',
-    fontFamily: 'roboto'
 
 }
 
 const thirdStyle: CSSProperties = {
     fontSize: '0.8rem',
-    fontFamily: 'roboto'
 
 }
 

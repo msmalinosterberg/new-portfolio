@@ -33,9 +33,6 @@ class EducationDetails extends Component<Props, State> {
         return (
 
             <Row style={detailContainer}>
-
-
-
                 <Col lg={{ span: 24 }} style={columnStyle}>
 
                     <h5 style={titleStyle}>{this.state.education.title}</h5>
