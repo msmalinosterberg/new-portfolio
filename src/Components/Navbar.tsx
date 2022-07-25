@@ -25,8 +25,9 @@ const Navbar = () => {
         <Layout.Header className="nav-header">
           <div className="">
             <h3 className="brand-font">
-              <img src={logo} alt="logo" className='logo' />
-
+              <a href="/">
+                <img src={logo} alt="logo" className='logo' />
+              </a>
             </h3>
           </div>
           <div className="navbar-menu">

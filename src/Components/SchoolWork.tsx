@@ -40,7 +40,7 @@ export const workList: Work[] = [{
 {
     id: 4,
     title: 'FallingStars',
-    description: 'Group assignment in basci JavaScript 60yhp. January 2021. The task was to created a game with p5.js. You can find the game description on gitHub.',
+    description: 'Group assignment in basic JavaScript 60yhp. January 2021. The task was to created a game with p5.js. You can find the game description on gitHub.',
     imageUrl: 'https://user-images.githubusercontent.com/73331860/112620873-5a04cf00-8e29-11eb-85d4-7a66af6ed71d.png?raw=true',
     link: 'https://fallingstars.netlify.app/',
     tags: '[HTML] [CSS] [TypeScript] [OOP] [p5.js][git & Github] [VS code] [pseudokod] [flowchart]',

@@ -179,8 +179,9 @@
     order: 2;
   }
   .detailImg {
-    height: 400px;
-    margin-bottom: 0;
+    max-width: 767px;
+    margin: 0;
+    padding: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
