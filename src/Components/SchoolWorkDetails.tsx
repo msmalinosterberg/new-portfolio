@@ -42,14 +42,16 @@ class SchoolWorkDetails extends Component<Props, State> {
                                 <p style={secondStyle}>Check out the project</p> </a>
                             <a href={this.state.work.githubRepo}>
                                 <p style={secondStyle}> Github</p> </a>
-                            <p style={thirdStyle} className='tagStyle'>  <Tag color="blue">{this.state.work.tags}</Tag></p>
+                            <p style={thirdStyle} className='tagStyle'>  <Tag color="#8e79ff">{this.state.work.tags}</Tag></p>
                             <button style={buttonStyle} onClick={this.navigateBack}>Back</button>
                         </Col>
 
                         <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} style={columnStyle}>
                             <Image
+
                                 src={this.state.work.imageUrl}
                                 className='detailImg'
+
                             />
                         </Col>
                     </Row>
