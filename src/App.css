@@ -6,8 +6,8 @@
 }
 
 .App {
-  text-align: center;
-overflow-y: auto;
+  /* text-align: center; */
+  overflow-y: auto;
 }
 
 
@@ -15,7 +15,7 @@ overflow-y: auto;
   border-bottom: none;
   box-shadow: none;
   border: none;
-  font-family: 'roboto';
+
 }
 
 .ant-menu-horizontal > .ant-menu-item {
@@ -29,7 +29,6 @@ overflow-y: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
 
 }
 .slidingText{
@@ -40,16 +39,16 @@ overflow-y: auto;
 .ant-divider-horizontal.ant-divider-with-text-center::after
 {
    border-top: 1px solid #FFC300;
-   width: 30%;
-   justify-content: center;
-   display: flex;
-   align-items: center;
+ 
+ 
 }
 .dividerStyle {
   justify-content: center;
   display: flex;
   align-items: center;
+
 }
+
 
 
 /* navbar */
@@ -169,8 +168,27 @@ overflow-y: auto;
   .downloadblubb {
   padding-left: 10rem;
   opacity: 75%;
+
   }
-}
+  .profileImg {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .socialMediaLinks {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .home {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+} 
+
+
 
 
 /*Animation*/ 

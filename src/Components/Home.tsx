@@ -14,29 +14,33 @@ const { Content } = Layout;
 
 function Home() {
     return (
-        <Layout style={layoutContainer}>
+        <Layout style={layoutContainer} >
             <Content>
-                <Row style={detailContainer}>
+                <Row style={detailContainer} className="socialMediaLinks" >
 
-                    <Col lg={{ span: 12 }} style={columnStyle}>
+                    <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} style={columnStyle} >
                         <div className="home">
                             <SlidingFromLeftAnimation>
                                 <h1 className="slidingText" style={{ fontSize: '3.5rem', marginRight: '3rem' }}>
                                     Hello there, I'm Malin
                                 </h1>
                             </SlidingFromLeftAnimation>
-                        </div>
-                        <p style={pStyle}>
-                            I'm a front end developer with a background in marketing and communication. I love solving problems, coming up with creative solutions and make them come to life.
 
-                            <br />
-                            <br />
-
-                            <b> I'm currently looking for a job in the area of Gothenburg or Stockholm.
+                            <p style={pStyle}>
+                                I'm a front end developer with a background in marketing and communication. I love solving problems, coming up with creative solutions and make them come to life.
                                 <br />
-                                I'm open for working remote as well.</b>  </p>
-                        <Divider plain> Let's keep in touch</Divider>
-                        <div style={{ fontSize: '2.3rem', display: 'flex', justifyContent: 'space-around', marginTop: '1rem', marginRight: '5rem' }}>
+                                <br />
+
+                                <b> I'm currently looking for a job in the area of Gothenburg or Stockholm.
+                                    <br />
+                                    I'm open for working remote as well.</b>
+                            </p>
+
+                            <Divider orientation="center"> Let's keep in touch</Divider>
+
+                        </div>
+
+                        <div style={socialMediaLinkStyle} className="socialMediaLinks">
                             <a href="https://github.com/msmalinosterberg/" style={{ color: 'black' }}>
                                 <GithubOutlined />
                             </a>
@@ -49,16 +53,14 @@ function Home() {
                     </Col>
 
 
-                    <Col lg={{ span: 12 }}>
+                    <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} className="profileImg">
                         <Image
                             width={350}
                             style={imageStyle}
                             src="https://user-images.githubusercontent.com/73331860/112337361-222d4880-8cbe-11eb-84a6-0e47cc562162.png"
                         />
-
-
                     </Col>
-                    <Col lg={{ span: 24 }} style={{ marginTop: '-10rem' }} className="downloadblubb">
+                    <Col lg={{ span: 24 }} md={{ span: 24 }} sm={{ span: 24 }} style={{ marginTop: '-10rem' }} className="downloadblubb">
                         <DownloadPdf />
                     </Col>
                 </Row>
@@ -81,23 +83,19 @@ const layoutContainer: CSSProperties = {
 
 const imageStyle: CSSProperties = {
     borderRadius: '3.8rem',
-
-
+    marginLeft: '8px'
 }
 
 const detailContainer: CSSProperties = {
-    justifyContent: 'space-between',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     width: '80%',
     margin: 'auto',
-    fontFamily: 'roboto',
 
 }
 
 const columnStyle: CSSProperties = {
-    fontFamily: 'roboto',
     marginTop: '7rem',
     marginBottom: '6rem',
 }
@@ -105,7 +103,15 @@ const columnStyle: CSSProperties = {
 const pStyle: CSSProperties = {
     fontSize: '16px',
     justifyContent: 'center',
-    alignContent: 'center'
+    alignContent: 'center',
+    display: 'flex',
+    flexDirection: 'column'
+}
+
+const socialMediaLinkStyle: CSSProperties = {
+    justifyContent: 'space-around',
+    fontSize: '2.3rem',
+    display: 'flex'
 }
 
 export default Home; 
