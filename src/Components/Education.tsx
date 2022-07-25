@@ -2,7 +2,7 @@ import { Card, List } from "antd";
 import { Component, CSSProperties } from "react";
 import Col from "antd/lib/grid/col";
 import Row from "antd/lib/grid/row";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { educationList } from "./EducationList";
 
 const { Meta } = Card;
@@ -10,7 +10,7 @@ class EducationCard extends Component {
     render() {
         return (
             <Row style={cardContainer}>
-                <Col span={12} style={columnStyle}>
+                <Col lg={{ span: 12 }} md={{ span: 24 }} sm={{ span: 24 }} style={columnStyle}>
                     <List
 
                         grid={{
@@ -25,18 +25,15 @@ class EducationCard extends Component {
                         dataSource={educationList}
                         renderItem={item => (
 
-                            <List.Item>
-                                <Card
-                                    hoverable
-                                    style={{
-                                        width: 'auto',
-                                        height: 'auto',
+                            <List.Item >
 
-                                    }}
+                                <Card size="small" title={item.title} extra={<Link to={'/education/' + item.id}>More</Link>} style={{ width: 'auto', height: 'auto' }}
+                                    hoverable
                                 >
-                                    <Meta title={item.title} description={item.description} />
+                                    <Meta description={item.description} />
                                     <span> {item.date}</span>
                                 </Card>
+
                             </List.Item>
                         )}
                     />
