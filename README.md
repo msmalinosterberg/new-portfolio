@@ -1,4 +1,5 @@
 ## Check out my portfolio.
 
-#### Questions? Please contact me @ msmalinosterberg@gmail.com || https://www.linkedin.com/in/malin-osterberg/ 
+### Questions? Please contact me @ msmalinosterberg@gmail.com || https://www.linkedin.com/in/malin-osterberg/ 
+#### Best regards Malin Österberg 
 
